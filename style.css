@@ -1,0 +1,19 @@
+ :root {--text: #661146;
+--background: #d1a6cb;
+--primary: #885e8b;
+--secondary: #c26dbbd5;
+--accent: #914877;
+ }
+body {
+    color: var(--text);
+    background: var(--background);
+    font-family: "dancing script" , cursive; 
+}
+img {
+    border: 4px solid ;
+    padding: 4px;
+    border-radius: 16px;
+    background: var(--secondary);
+audio {}
+
+

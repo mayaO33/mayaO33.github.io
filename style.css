@@ -4,7 +4,10 @@
 --primary: #885e8b;
 --secondary: #c26dbbd5;
 --accent: #914877;
- }
+* {
+     /* /* border: 1px solid white  */
+}
+ 
 body {
     color: var(--text);
     background: var(--background);
@@ -25,3 +28,4 @@ h1 {
 h2 {text-decoration: dashed underline;}
 
 
+h3 {text-decoration: dashed underline ;}

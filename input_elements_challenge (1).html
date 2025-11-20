@@ -119,11 +119,6 @@
         const modeOutput = document.getElementById("modeOutput");
 
         btnSubmit.addEventListener("click", () => {
-            // TODO: Find which radio button is checked and display it.
-            //if the light mode is checked, display light 
-            //if the dark mode is checked, display dark
-            //if the system mode is checked, display system
-            // Challenge: Include whether the user subscribed or not.
         });
          // --- PART 4 ---
         const nounInput = document.getElementById("nounInput");
@@ -136,7 +131,7 @@
             let noun= nounInput.value;
             let verb= verbInput.value;
             let adverb= adverbInput.value;
-            sentenceOutput.textContent = " The "  +  noun +  verb  + "on"   + "the " + adverb;
+            sentenceOutput.textContent = " nounInput "  +  " verbInput "   + " adverbInput ";
             if(noun=null) {
                 sentenceOutput.textContent = "Enter a word"
             }

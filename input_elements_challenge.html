@@ -76,15 +76,15 @@
     <section id="part4">
         <h2>Part 4: Madlibs generator</h2>
         <label>
-            Name:
+            noun:
             <input id="nounInput" type="text" placeholder="Enter noun">
         </label>
                 <label>
-            Name:
+            verb
             <input id="verbInput" type="text" placeholder="Enter verb">
         </label>
                 <label>
-            Name:
+            adverb:
             <input id="adverbInput" type="text" placeholder="Enter adverb">
         </label>
         <button id="btnSentence">Generate sentence</button>
@@ -128,13 +128,16 @@
         const sentenceOutput = document.getElementById("sentenceOutput");
 
         btnSentence.addEventListener("click", () => {
-            let noun= nounInput.value;
-            let verb= verbInput.value;
-            let adverb= adverbInput.value;
-            sentenceOutput.textContent = " nounInput "  +  " verbInput "   + " adverbInput ";
-            if(noun=null) {
-                sentenceOutput.textContent = "Enter a word"
+            let noun = nounInput.value;
+            let verb = verbInput.value;
+            let adverb = adverbInput.value;
+
+            if(noun =="" || verb =="" || adverb == "" ) 
+                sentenceOutput.textContent = "Please enter all words!";
+            return;
             }
+            
+            sentenceOutput.textContent = noun + " " + verb + " " + adverb + ".";
         });
     </script>
 </body>

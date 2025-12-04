@@ -136,7 +136,11 @@
                 sentenceOutput.textContent = "Please enter all words!";
             return;
             }
-            
+            const templates = [
+                'The ${noun} decided to ${verb} {adverb} at school.'
+                'Never let a ${noun} ${verb} ${adverb} during an exam '
+            ]
+
             sentenceOutput.textContent = noun + " " + verb + " " + adverb + ".";
         });
     </script>

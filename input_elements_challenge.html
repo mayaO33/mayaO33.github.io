@@ -120,30 +120,7 @@
 
         btnSubmit.addEventListener("click", () => {
         });
-         // --- PART 4 ---
-        const nounInput = document.getElementById("nounInput");
-        const verbInput = document.getElementById("verbInput");
-        const adverbInput = document.getElementById("adverbInput");
-        const btnSentence = document.getElementById("btnSentence");
-        const sentenceOutput = document.getElementById("sentenceOutput");
-
-        btnSentence.addEventListener("click", () => {
-            let noun = nounInput.value;
-            let verb = verbInput.value;
-            let adverb = adverbInput.value;
-
-            if(noun =="" || verb =="" || adverb == "" ) 
-                sentenceOutput.textContent = "Please enter all words!";
-            return;
-            }
-            const templates = [
-                'The ${noun} decided to ${verb} {adverb} at school.'
-                'Never let a ${noun} ${verb} ${adverb} during an exam '
-            ]
-
-            sentenceOutput.textContent = noun + " " + verb + " " + adverb + ".";
-        });
-    </script>
-</body>
+        
+    </script></body>
 
 </html>

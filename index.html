@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+  <link>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <title>Document</title>
-<link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<link href="stylesheet" href="style.css">
+  <link rel=" preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1> Maya's Haven</h1>
+  <h1> Maya's Haven</h1>
 
-<h2>My community</h2>
+  <h2>My community</h2>
 
-<h3>My family</h3>
+  <h3>My family</h3>
 
-<p><em>My</em>
- famly is made up of four </p>
+  <p><em>My</em>
+    famly is made up of four </p>
 
-<ul><li> Me
-<li> My parents
-<li> My sister</li></ul>
+  <ul>
+    <li> Me
+    <li> My parents
+    <li> My sister</li>
+  </ul>
 
-<h3>My friends</h3>
-<li>Lila</li>
-<li>Shan</li>
-<li>Joan</li>
+  <h3>My friends</h3>
+  <li>Lila</li>
+  <li>Shan</li>
+  <li>Joan</li>
 
-<h2>Who Even Is Maya?</h2>
-<h3>My Interests</h3>
+  <h2>Who Even Is Maya?</h2>
+  <h3>My Interests</h3>
 
-<ol><li>Track and field 
-<li>Swimming
+  <ol>
+    <li>Track and field</li>
+    <li>Swimming</li>
+  </ol>
+  <h3>Activities I am trying to get into</h3>
+  <ul>
+    <li>Painting</li>
+    <li>Drawing</li>
+    <li>Journaling</li>
+  </ul>
+  <P>Check out my class links! <a href="class_links2.html">Class Links</a></P>
+  <p>These are my workouts for a better 100m time <a href="Trackworkout.html"> Link to my workouts!</a></p>
+  <P>It is very important to stretch really good before working out <a href="stretches.html">Here are some effective
+      stretches</a></P>
+  <p id="balloon">🎈</p>
 
-<h3>Activities I am trying to get into</h3> 
-<ul>
-  <li>Painting</li>
-  <li>Drawing</li>
-  <li>Journaling</li>
-</ul>
-<P>Check out my class links! <a href="class_links2.html">Class Links</a></P>
-<p>These are my workouts for a better 100m time <a href="Trackworkout.html"> Link to my workouts!</a></p>
-<P>It is very important to stretch really good before working out <a href="stretches.html">Here are some effective stretches</a></P>
-<p id="balloon">🎈</p>
-
-<script>
-  let balloonEl = document.getElementById("balloon");
-  let fontSize = 10;
- function handleKeyDown(event) {
-   if(event.key=="ArrowUp") {
-     fontSize *= 1.1;
-     balloonEl.style.fontSize = fontSize + "px";
-     event.preventDefault();
-     }
-   if (event.key == "ArrowDown") {
-     fontSize /= 1.1;
-     balloonEl.style.fontSize = fontSize + "px";
-     event.preventDefault();
-     }
-   }
-  window.addEventListener("keydown", handleKeyDown)
-    </script>
+  <script>
+    let balloonEl = document.getElementById("balloon");
+    let fontSize = 10;
+    function handleKeyDown(event) {
+      if (event.key == "ArrowUp") {
+        fontSize *= 1.1;
+        balloonEl.style.fontSize = fontSize + "px";
+        event.preventDefault();
+      }
+      if (event.key == "ArrowDown") {
+        fontSize /= 1.1;
+        balloonEl.style.fontSize = fontSize + "px";
+        event.preventDefault();
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown)
+  </script>
 </body>
+
 </html>

@@ -26,6 +26,7 @@
     </label>
 
     <button id="btnSentence">Generate sentence</button>
+    <button id="btnReset">Reset</button>
 
     <div class="output" id="sentenceOutput"></div>
   </section>
@@ -35,6 +36,13 @@
     const verbInput = document.getElementById('verbInput');
     const btnSentence = document.getElementById('btnSentence');
     const sentenceOutput = document.getElementById('sentenceOutput');
+    const btnReset = document.getElementById('btnReset');
+    
+    btnReset.addEventListener('click', () => {
+      nounInput.value = '';
+      verbInput.value = '';
+      sentenceOutput.textContent = '';
+    });
 
     btnSentence.addEventListener('click', () => {
       const noun = nounInput.value.trim();

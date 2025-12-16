@@ -24,10 +24,30 @@
       Verb:
       <input id="verbInput" type="text" placeholder="Enter a verb">
     </label>
+
     <button id="btnSentence">Generate sentence</button>
+
     <div class="output" id="sentenceOutput"></div>
   </section>
 
+  <script>
+    const nounInput = document.getElementById('nounInput');
+    const verbInput = document.getElementById('verbInput');
+    const btnSentence = document.getElementById('btnSentence');
+    const sentenceOutput = document.getElementById('sentenceOutput');
+
+    btnSentence.addEventListener('click', () => {
+      const noun = nounInput.value.trim();
+      const verb = verbInput.value.trim();
+
+      if (noun && verb) {
+        const sentence = `The ${noun} likes to ${verb}.`;
+        sentenceOutput.textContent = sentence;
+      } else {
+        sentenceOutput.textContent = 'Please enter both a noun and a verb.';
+      }
+    });
+  </script>
 </body>
 
 </html>
